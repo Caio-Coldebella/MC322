@@ -1,7 +1,11 @@
 # Projeto Jogo Interpol
 
-## Equipe:
+## Equipe
   * Caio Ruiz Coldebella RA:232621
-## Descrição resumida do projeto:
+## Descrição Resumida do Projeto
   * escrever aqui descrição do projeto
 
+## Vídeo do Projeto
+  * [Acessar](https://www.youtube.com/watch?v=ytJRJuvAP7o&t=8s)
+## Diagrama Geral de Componentes
+  * inserir diagrama geral
