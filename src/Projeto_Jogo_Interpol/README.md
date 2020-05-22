@@ -9,3 +9,4 @@
   * [Acessar](https://www.youtube.com/watch?v=ytJRJuvAP7o&t=8s)
 ## Diagrama Geral de Componentes
   * inserir diagrama geral
+  * ![diagrama](Projeto.pdf)
