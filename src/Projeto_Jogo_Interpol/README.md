@@ -9,4 +9,4 @@
   * [Acessar](https://www.youtube.com/watch?v=ytJRJuvAP7o&t=8s)
 ## Diagrama Geral de Componentes
   * inserir diagrama geral
- ![diagrama](Projeto 10jpeg.jpg)
+ ![diagrama](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Projeto%2010jpeg.jpg?raw=true)
