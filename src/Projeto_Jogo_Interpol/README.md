@@ -9,3 +9,4 @@
   * [Acessar](https://www.youtube.com/watch?v=ytJRJuvAP7o&t=8s)
 ## Diagrama Geral de Componentes
   ![pag1](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/pag1.jpg)
+  ![pag2](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/pag2.jpg)
