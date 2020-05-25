@@ -12,13 +12,13 @@
   ![pag2](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/pag2.jpg)
 # Componente `EstMetro`
 
-![Componente]()
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estmetro.png)
 
 ## Interfaces
 
 Interfaces associadas a esse componente:
 
-![Diagrama Interfaces](diagrama-interfaces.png)
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaometro.png)
 
 Campo | Valor
 ----- | -----
@@ -38,10 +38,174 @@ public interface IDataSource {
 public interface IDataSet extends ITableProducer, IDataSource {
 }
 ~~~
+# Componente `EstOnibus`
 
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estonibus.png)
 
+## Interfaces
 
+Interfaces associadas a esse componente:
 
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaoonibus.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
+# Componente `EstTaxi`
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/esttaxi.png)
+
+## Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaotaxi.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
+# Componente `MisterX`
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/misterx.png)
+
+## Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/imisterx.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
+# Componente `Policia`
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/policia.png)
+
+## Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/ipolicia.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
+# Componente `Tabuleiro`
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/tabuleiro.png)
+
+## Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/itabuleiro.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
+# Componente `Rodadas`
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/rodadas.png)
+
+## Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/irodadas.png)
+
+Campo | Valor
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `<nome dos membros que criaram o componente>`
+Objetivo | `<objetivo do componente>`
+Interface | `<interface em Java do componente>`
+~~~
+public interface ITableProducer {
+  String[] requestAttributes();
+  String[][] requestInstances();
+}
+public interface IDataSource {
+  public String getDataSource();
+  public void setDataSource(String dataSource);
+}
+public interface IDataSet extends ITableProducer, IDataSource {
+}
+~~~
 
 
 
