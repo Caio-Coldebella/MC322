@@ -3,7 +3,14 @@
 ## Equipe
   * Caio Ruiz Coldebella RA:232621
 ## Descrição Resumida do Projeto
-  * escrever aqui descrição do projeto
+  * O projeto é uma versão simplificada do jogo Interpol, o tabuleiro é composto de 50 estações, sendo estas de Metrô, Ônibus ou Táxi. O jogador controla 4 peças que representam os detetives, já o computador controla o MisterX, cada peça começa em uma estação diferente no tabuleiro. O objetivo do jogo é estar na mesma casa do MisterX em até 12 rodadas, caso contrário o MisterX vencerá. O MisterX move-se escondido pelo tabuleiro, sendo que toda rodada é revelado o meio de transporte que ele utilizou para se locomover, e sendo revelada a sua posição apenas nas rodadas 2, 6 e 10, e na última caso MisterX vença.
+  * Todas as peças se movem da seguinte forma:
+    * Caso estejam em uma estação de metrô:
+      * Podem se mover para uma estação de metrô vizinha utilizando o metrô, podem se mover para uma estação de ônibus vizinha utilizando ônibus, e podem se mover para uma estação de táxi vizinha utilizando táxi.
+    * Caso estejam em uma estação de ônibus:
+      * Podem se mover para uma estação de metrô vizinha utilizando ônibus, podem se mover para uma estação de ônibus vizinha utilizando õnibus, e podem se mover para uma estação de táxi vizinha utilizando táxi.
+    * Caso estejam em uma estação de táxi:
+      * Podem se mover para uma estação de metrô, ônibus ou taxi vizinhas utilizando táxi
 
 ## Vídeo do Projeto
   * [Acessar](https://www.youtube.com/watch?v=ytJRJuvAP7o&t=8s)
@@ -22,8 +29,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -50,8 +57,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe | `MC322/src/Projeto_Jogo_Interpol/EstOnibus.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -78,8 +85,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe |`MC322/src/Projeto_Jogo_Interpol/EstTaxi.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -106,8 +113,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe | `MC322/src/Projeto_Jogo_Interpol/MisterX.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -134,8 +141,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe | `MC322/src/Projeto_Jogo_Interpol/Policia.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -162,8 +169,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe | `MC322/src/Projeto_Jogo_Interpol/Tabuleiro.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
@@ -190,8 +197,8 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
+Classe | `MC322/src/Projeto_Jogo_Interpol/Rodadas.java`
+Autores | `Caio Ruiz Coldebella`
 Objetivo | `<objetivo do componente>`
 Interface | `<interface em Java do componente>`
 ~~~
