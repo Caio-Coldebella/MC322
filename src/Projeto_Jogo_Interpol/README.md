@@ -10,9 +10,6 @@
 ## Diagrama Geral de Componentes
   ![pag1](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/pag1.jpg)
   ![pag2](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/pag2.jpg)
-//////////////////////////////////////////////////////////////////////////////////////////////////////////
-Para cada componente será apresentado um documento conforme o modelo a seguir:
-
 # Componente `<Nome do Componente>`
 
 ![Componente](diagrama-componente.png)
@@ -41,6 +38,23 @@ public interface IDataSource {
 public interface IDataSet extends ITableProducer, IDataSource {
 }
 ~~~
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Detalhamento das Interfaces
 
