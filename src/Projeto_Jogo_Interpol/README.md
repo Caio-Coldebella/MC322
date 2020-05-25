@@ -12,7 +12,7 @@
   ![pag2](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/pag2.jpg)
 # Componente `EstMetro`
 
-![Componente](diagrama-componente.png)
+![Componente]()
 
 ## Interfaces
 
