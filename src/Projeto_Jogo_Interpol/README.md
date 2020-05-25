@@ -10,7 +10,7 @@
 ## Diagrama Geral de Componentes
   ![pag1](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/pag1.jpg)
   ![pag2](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/pag2.jpg)
-# Componente `<Nome do Componente>`
+# Componente `EstMetro`
 
 ![Componente](diagrama-componente.png)
 
