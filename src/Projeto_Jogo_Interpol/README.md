@@ -184,29 +184,44 @@ public interface IRodadas {
 ~~~
 ## Detalhamento das Interfaces
 
-### Interface `<nome da interface>`
-`<papel da interface>`.
+### Interface `Estacao`
+`Interface provida por qualquer classe que represente uma estação, podendo ser de metrô, ônibus ou táxi`
 
 Método | Objetivo
 -------| --------
-`<id do método em Java>` | `<objetivo do método e descrição dos parâmetros>`
-
-## Exemplo:
-
-### Interface `ITableProducer`
-
-Interface provida por qualquer fonte de dados que os forneça na forma de uma tabela.
+`getOcupada` | `Retorna uma string que diz se a estação está ocupada, e se sim por qual peça`
+`getvizinhanca` | `Retorna uma lista do tipo Estacao[] com todos os vizinhos da estação`
+`addvizinho` | `Adiciona uma estação vizinha á lista vizinhança de uma peça`
+### Interface `IMisterX`
+`Interface que recebe a classe MisterX`
 
 Método | Objetivo
 -------| --------
-`requestAttributes` | Retorna um vetor com o nome de todos os atributos (colunas) da tabela.
-`requestInstances` | Retorna uma matriz em que cada linha representa uma instância e cada coluna o valor do respectivo atributo (a ordem dos atributos é a mesma daquela fornecida por `requestAttributes`.
-
-### Interface `IDataSetProperties`
-
-Define o recurso (usualmente o caminho para um arquivo em disco) que é a fonte de dados.
+`getpos` | `Retorna um número que representa em qual estação MisterX está`
+`setpos` | `Move MisterX para outra estação`
+`random` | `Sorteia para qual estação MisterX se moverá naquela rodada`
+### Interface `IPolicia`
+`Interface que recebe a classe Policia>`
 
 Método | Objetivo
 -------| --------
-`getDataSource` | Retorna o caminho da fonte de dados.
-`setDataSource` | Define o caminho da fonte de dados, informado através do parâmetro `dataSource`.
+`getpos` | `Retorna um int que representa em qual estação a peça está`
+`setpos` | `Altera a posição de uma peça do tipo Polícia`
+`movement` | `Move uma peça do tipo Policia para outra estação`
+### Interface `ITabuleiro`
+`Interface que representa o tabuleiro do jogo e recebe a interface Estacao em um de seus métodos`
+
+Método | Objetivo
+-------| --------
+`criatabuleiro` | `Cria a lista do tipo Estacao[] tab, que armazena as 50 estações do tabuleiro`
+`moverpolicia` | `Move uma peça do tipo Policia e verifica se o jogo acabou`
+`movermisterx` | `Move uma peça do tipo MisterX`
+`buscaposicao` | `Busca uma estação na lista tab e retorna o seu número`
+### Interface `IRodadas`
+`Interface provida pela classe Rodadas`
+
+Método | Objetivo
+-------| --------
+`getrodada` | `Retorna o número da rodada atual`
+`incrodada` | `Aumenta em 1 o número da rodada`
+`revealposition` | `Verifica se o MisterX deve revelar sua posição naquela rodada, se sim retorna true, retorna false caso contrário`
