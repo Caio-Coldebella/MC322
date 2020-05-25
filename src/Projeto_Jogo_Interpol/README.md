@@ -31,18 +31,14 @@ Campo | Valor
 ----- | -----
 Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Representa cada uma das estações de metrô, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
+Interface | `Estacao`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
 }
 ~~~
 # Componente `EstOnibus`
@@ -57,20 +53,16 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe | `MC322/src/Projeto_Jogo_Interpol/EstOnibus.java`
+Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Representa cada uma das estações de ônibus, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
+Interface | `Estacao`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
 }
 ~~~
 # Componente `EstTaxi`
@@ -85,20 +77,16 @@ Interfaces associadas a esse componente:
 
 Campo | Valor
 ----- | -----
-Classe |`MC322/src/Projeto_Jogo_Interpol/EstTaxi.java`
+Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Representa cada uma das estações de táxi, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
+Interface | `Estacao`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
 }
 ~~~
 # Componente `MisterX`
@@ -115,18 +103,13 @@ Campo | Valor
 ----- | -----
 Classe | `MC322/src/Projeto_Jogo_Interpol/MisterX.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Representar a peça do MisterX, assim como sortear para qual estação ele se moverá`
+Interface | `IMisterX`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface IMisterX {
+	public int getpos();
+	public void setpos(int posicao);
+	public void random();
 }
 ~~~
 # Componente `Policia`
@@ -143,18 +126,13 @@ Campo | Valor
 ----- | -----
 Classe | `MC322/src/Projeto_Jogo_Interpol/Policia.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Representar as peças controladas pelo jogador e verificar se estas podem se mover para a estação selecionada pelo jogador`
+Interface | `IPolicia`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface IPolicia {
+	public int getpos();
+	public void setpos(int posicao);
+	public void movement(int estacao);
 }
 ~~~
 # Componente `Tabuleiro`
@@ -171,18 +149,14 @@ Campo | Valor
 ----- | -----
 Classe | `MC322/src/Projeto_Jogo_Interpol/Tabuleiro.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Armazenar uma lista contendo todas as estações, assim como mover as peças de uma estação para a outra e verificar quando o MisterX deve se revelar e quando o jogo acaba`
+Interface | `ITabuleiro`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface ITabuleiro {
+	public void criatabuleiro();
+	public void moverpolicia(int origem, int destino);
+	public void movermisterx(int origem, int destino);
+	public int buscaposicao(Estacao casa);
 }
 ~~~
 # Componente `Rodadas`
@@ -199,26 +173,15 @@ Campo | Valor
 ----- | -----
 Classe | `MC322/src/Projeto_Jogo_Interpol/Rodadas.java`
 Autores | `Caio Ruiz Coldebella`
-Objetivo | `<objetivo do componente>`
-Interface | `<interface em Java do componente>`
+Objetivo | `Armazenar a informação de qual rodada o jogo se encontra, assim como incrementar tal dado e também verificar se o MisterX deve se mover naquela rodada`
+Interface | `IRodadas`
 ~~~
-public interface ITableProducer {
-  String[] requestAttributes();
-  String[][] requestInstances();
-}
-public interface IDataSource {
-  public String getDataSource();
-  public void setDataSource(String dataSource);
-}
-public interface IDataSet extends ITableProducer, IDataSource {
+public interface IRodadas {
+	public int getrodada();
+	public void incrodada();
+	public boolean revealposition();
 }
 ~~~
-
-
-
-
-
-
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
