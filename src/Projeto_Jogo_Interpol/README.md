@@ -48,14 +48,6 @@ public interface IDataSet extends ITableProducer, IDataSource {
 
 
 
-
-
-
-
-
-
-
-
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
