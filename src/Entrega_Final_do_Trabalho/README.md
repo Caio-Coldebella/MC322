@@ -18,17 +18,11 @@
 └── assets             <- mídias usadas no projeto
 ~~~
 
-## `src`
-
-Projeto em Java, preferencialmente em Eclipse, incluindo todos os arquivos de dados e bibliotecas necessários para a sua execução. Dentro dessa pasta sugerimos que você mantenha uma estrutura equivalente ao Eclipse, com uma subpasta `src` onde estarão os fontes e outra subpasta `bin` onde estarão os bytecodes.
-
- Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
-
 ## `assets`
-![Tabuleiro]()
-![Táxi]()
-![Ônibus]()
-![Metrô]()
+![Tabuleiro](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/tabuleiro.png)
+![Táxi](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/taxi.png)
+![Ônibus](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/onibus.png)
+![Metrô](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/metro.png)
 
 # Modelo para Apresentação do Projeto
 
