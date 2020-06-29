@@ -25,8 +25,10 @@ Projeto em Java, preferencialmente em Eclipse, incluindo todos os arquivos de da
  Acrescente na raiz um arquivo `README.md` com as instruções básicas de instalação e execução.
 
 ## `assets`
-
-Qualquer mídia usada no seu projeto: vídeo, imagens, animações, slides etc. Coloque os arquivos aqui (mesmo que você mantenha uma cópia no diretório do código).
+![Tabuleiro]()
+![Táxi]()
+![Ônibus]()
+![Metrô]()
 
 # Modelo para Apresentação do Projeto
 
