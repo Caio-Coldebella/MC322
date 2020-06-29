@@ -38,9 +38,14 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 # Projeto `Interpol`
 
 # Descrição Resumida do Projeto/Jogo
-
-O jogo é composto de um tabuleiro com 50 casas, por 4 peças controladas pelo jogador, e por 1 peça controlada pelo programa.
-O objetivo do jogo é capturar a peça controlada pelo computador antes de 12 rodadas, sendo que o programa informa a posição da peça fugitiva apenas em 3 rodadas do jogo e informa o meio de transporte utilizado toda rodada
+* O projeto é uma versão simplificada do jogo Interpol, o tabuleiro é composto de 50 estações, sendo estas de Metrô, Ônibus ou Táxi. O jogador controla 4 peças que representam os detetives, já o computador controla o MisterX, cada peça começa em uma estação diferente no tabuleiro. O objetivo do jogo é estar na mesma casa do MisterX em até 12 rodadas, caso contrário o MisterX vencerá. O MisterX move-se escondido pelo tabuleiro, sendo que toda rodada é revelado o meio de transporte que ele utilizou para se locomover, e sendo revelada a sua posição apenas nas rodadas 2, 6 e 10, e na última caso MisterX vença.
+  * Todas as peças se movem da seguinte forma:
+    * Caso estejam em uma estação de metrô:
+      * Podem se mover para uma estação de metrô vizinha utilizando o metrô, podem se mover para uma estação de ônibus vizinha utilizando ônibus, e podem se mover para uma estação de táxi vizinha utilizando táxi.
+    * Caso estejam em uma estação de ônibus:
+      * Podem se mover para uma estação de metrô vizinha utilizando ônibus, podem se mover para uma estação de ônibus vizinha utilizando õnibus, e podem se mover para uma estação de táxi vizinha utilizando táxi.
+    * Caso estejam em uma estação de táxi:
+      * Podem se mover para uma estação de metrô, ônibus ou taxi vizinhas utilizando táxi
 
 # Equipe
 * `Caio Ruiz Coldebella` - `232621`
