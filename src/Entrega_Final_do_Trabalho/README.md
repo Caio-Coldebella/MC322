@@ -1,5 +1,3 @@
-# Modelo de Apresentação do Projeto
-
 # Estrutura de Arquivos e Pastas
 
 ~~~
@@ -37,16 +35,15 @@ Segue abaixo o modelo de como deve ser documentado o projeto e cada componente d
 
 Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
 
-# Modelo para Apresentação do Projeto
-
-# Projeto `<Título do Projeto/Jogo>`
+# Projeto `Interpol`
 
 # Descrição Resumida do Projeto/Jogo
 
-> <Descreva resumidamente o jogo e seu propósito.>
+O jogo é composto de um tabuleiro com 50 casas, por 4 peças controladas pelo jogador, e por 1 peça controlada pelo programa.
+O objetivo do jogo é capturar a peça controlada pelo computador antes de 12 rodadas, sendo que o programa informa a posição da peça fugitiva apenas em 3 rodadas do jogo e informa o meio de transporte utilizado toda rodada
 
 # Equipe
-* `<nome completo>` - `<RA>`
+* `Caio Ruiz Coldebella` - `232621`
 
 # Vídeos do Projeto
 
