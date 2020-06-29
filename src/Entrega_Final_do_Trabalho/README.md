@@ -101,39 +101,21 @@ public void algoInteressante(…) {
 
 # Documentação dos Componentes
 
-O vídeo a seguir apresenta um detalhamento de um projeto baseado em componentes:
-
-[![Projeto baseado em Componentes](http://img.youtube.com/vi/1LcSghlin6o/0.jpg)](https://youtu.be/1LcSghlin6o)
-
 # Diagramas
 
 ## Diagrama Geral do Projeto
 
-> <Apresente um diagrama geral de organização da organização do seu sistema. O formato é livre. A escolha de um ou mais estilos arquiteturais será considerado um diferencial.>
+![Diagrama Geral do Projeto](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/Diagrama_Geral_do_Projeto.jpg)
 
-> <Faça uma breve descrição do diagrama.>
+No diagrama podemos ver que a classe mainwindow recebe e envia informações diretamente para Tabuleiro, MisterX, Policia, Estacao e Rodadas.
+Recebe e envia para thread, e envia informações para windowbotao.
+Imagem envia para windowbotao, e windowbotao envia informações para thread
 
 ## Diagrama Geral de Componentes
 
 ### Exemplo 1
 
-Este é o diagrama compondo componentes para análise:
-
-![Diagrama Analise](diagrama-componentes-analise.png)
-
-### Exemplo 2
-
-Este é um diagrama inicial do projeto de jogos:
-
-![Diagrama Jogos](diagrama-componentes-jogos.png)
-
-### Exemplo 3
-
-Este é outro diagrama de um projeto de vendas:
-
-![Diagrama Vendas](diagrama-componentes-vendas.png)
-
-Para cada componente será apresentado um documento conforme o modelo a seguir:
+![Diagrama Geral de Componentes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/Diagrama_Componentes.jpg)
 
 ## Componente `<Nome do Componente>`
 
