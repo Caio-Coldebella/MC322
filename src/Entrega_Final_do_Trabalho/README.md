@@ -2,24 +2,18 @@
 
 # Estrutura de Arquivos e Pastas
 
-A estrutura aqui apresentada é uma simplificação daquela proposta pelo [Cookiecutter Data Science](https://drivendata.github.io/cookiecutter-data-science/). Também será aceito que o projeto adote a estrutura completa do Cookiecutter Data Science e isso será considerado um diferencial. A estrutura geral é a seguinte e será detalhada a seguir:
-
 ~~~
 ├── README.md          <- apresentação do projeto
 │
-├── data               <- dados usados pelo jogo (se houver)
-│
-├── notebooks          <- Jupyter notebooks ou equivalentes
-│
 ├── src                <- projeto em Java (preferencialmente projeto no Eclipse)
 │   │
-│   ├── src            <- arquivos-fonte do projeto (.java)
-│   │
-│   ├── bin            <- arquivos em bytecode (.class)
+│   ├── Interpol           <- arquivos-fonte do projeto (.java)
 │   │
 │   └── README.md      <- instruções básicas de instalação/execução
 │
-├── bin                <- bytecodes em Java
+├── bin
+|   |
+|   └── Interpol       <- arquivos em bytecode (.class)
 │
 └── assets             <- mídias usadas no projeto
 ~~~
