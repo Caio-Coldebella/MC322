@@ -57,15 +57,15 @@ Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Di
 # Vídeos do Projeto
 
 ## Vídeo da Prévia
-> <Coloque um link para o vídeo da prévia do projeto.>
+* [Prévia Interpol](https://www.youtube.com/watch?v=-aVv7dPcn2w&t=2s)
 
 ## Vídeo do Jogo
-> <Coloque um link para o vídeo em que é demonstrada a versão final do jogo. Esse vídeo deve ter em torno de 5 minutos. Este vídeo não apresenta slides, nem substitui a apresentação final do projeto, que será feita por conferência. Ele mostra apenas o jogo em funcionamento.>
+* [Demonstração do Jogo](https://www.youtube.com/watch?v=b_18EhfYALQ&t=54s)
 
 # Slides do Projeto
 
 ## Slides da Prévia
-`<Coloque um link para os slides da prévia do projeto.>`
+* [Slides Prévia](https://docs.google.com/presentation/d/1S1_0Auh7A4Bnty0BI946roO-Hn6JHsnYs1UAQwbwXwI/edit?usp=sharing)
 
 ## Slides da Apresentação Final
 `<Coloque um link para os slides da apresentação final do projeto.>`
