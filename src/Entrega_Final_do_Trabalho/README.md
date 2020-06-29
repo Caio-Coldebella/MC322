@@ -113,8 +113,6 @@ Imagem envia para windowbotao, e windowbotao envia informações para thread
 
 ## Diagrama Geral de Componentes
 
-### Exemplo 1
-
 ![Diagrama Geral de Componentes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/Diagrama_Componentes.jpg)
 
 ## Componente `<Nome do Componente>`
