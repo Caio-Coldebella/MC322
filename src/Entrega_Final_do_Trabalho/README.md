@@ -51,7 +51,7 @@
 * [Slides Prévia](https://docs.google.com/presentation/d/1S1_0Auh7A4Bnty0BI946roO-Hn6JHsnYs1UAQwbwXwI/edit?usp=sharing)
 
 ## Slides da Apresentação Final
-`<Coloque um link para os slides da apresentação final do projeto.>`
+* [Slides Apresentação Final](https://docs.google.com/presentation/d/12gT9gZTss7E-y8oYp15K24NXYm8-5Ades8nL5rl_mfQ/edit?usp=sharing)
 
 ## Relatório de Evolução
 
