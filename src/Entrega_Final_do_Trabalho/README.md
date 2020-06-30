@@ -320,6 +320,42 @@ public interface IRodadas {
 	public boolean revealposition();
 }
 ~~~
+## Componente `Imagem`
+
+Recebe uma String com o nome de um arquivp .png e retorna um JLabel contendo o arquivo .png
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/imagem.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.Imagem`
+Autores | `Caio Ruiz Coldebella`
+
+## Componente `thread`
+
+É chamada pela main, e faz a main esperar pela geração de um evento por algum botao para prosseguir o código
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/thread.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.thread`
+Autores | `Caio Ruiz Coldebella`
+
+## Componente `windowbotao`
+
+Tem como objetivo gerar a interface gráfica, e alterar a mesma, além de gerar os eventos de cada botão quando pressionado e alterar as cores desses
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/windowbotao.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.windowbotao`
+Autores | `Caio Ruiz Coldebella`
+
 ## Detalhamento das Interfaces
 
 ### Interface `<nome da interface>`
