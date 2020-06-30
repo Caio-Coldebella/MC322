@@ -227,7 +227,97 @@ Interface agregadora do componente em Java:
 public interface IMisterX {
 	public int getpos();
 	public void setpos(int posicao);
-	public void random();
+	public void random(ITabuleiro t,IPolicia p);
+	public String gettransp();
+	public void settransp(String transporte);
+}
+~~~
+## Componente `Policia`
+
+Representar as peças controladas pelo jogador e verificar se estas podem se mover para a estação selecionada pelo jogador
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/policia.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.Policia`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `IPolicia`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/ipolicia.png)
+
+Interface agregadora do componente em Java:
+
+~~~java
+public interface IPolicia {
+	public String getnome();
+	public int getpos();
+	public void setpos(int posicao);
+	public void movement(int estacao,ITabuleiro t);
+	public boolean getcaptura();
+	public void setcaptura();
+}
+~~~
+## Componente `Tabuleiro`
+
+Armazenar uma lista contendo todas as estações, assim como mover as peças de uma estação para a outra e verificar quando o MisterX deve se revelar e quando o jogo acaba
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/tabuleiro.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.tabuleiro`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `ITabuleiro`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/itabuleiro.png)
+
+Interface agregadora do componente em Java:
+
+~~~java
+public interface ITabuleiro {
+	public void criatabuleiro();
+	public void moverpolicia(int origem, int destino, Policia p);
+	public void movermisterx(int origem, int destino,IMisterX mx);
+	public int buscaposicao(Estacao casa);
+}
+~~~
+## Componente `Rodadas`
+
+Armazenar a informação de qual rodada o jogo se encontra, assim como incrementar tal dado e também verificar se o MisterX deve se mover naquela rodada
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/rodadas.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.Rodadas`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `IRodadas`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/irodadas.png)
+
+Interface agregadora do componente em Java:
+
+~~~java
+public interface IRodadas {
+	public int getrodada();
+	public void incrodada();
+	public boolean revealposition();
 }
 ~~~
 ## Detalhamento das Interfaces
