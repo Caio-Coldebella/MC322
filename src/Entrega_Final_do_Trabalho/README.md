@@ -115,6 +115,34 @@ Imagem envia para windowbotao, e windowbotao envia informações para thread
 
 ![Diagrama Geral de Componentes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/Diagrama_Componentes.jpg)
 
+## Componente `EstMetro`
+
+Representa cada uma das estações de metrô, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.
+
+![Componente](diagrama-componente.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `Estacao`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](diagrama-interfaces.png)
+
+Interface agregadora do componente em Java:
+
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
+}
+~~~
 ## Componente `<Nome do Componente>`
 
 > <Resumo do papel do componente e serviços que ele oferece.>
@@ -138,171 +166,6 @@ Interface agregadora do componente em Java:
 
 ~~~java
 public interface IDataSet extends ITableProducer, IDataSetProperties {
-}
-~~~
-# Componente `EstMetro`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estmetro.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaometro.png)
-
-Campo | Valor
------ | -----
-Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Representa cada uma das estações de metrô, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
-Interface | `Estacao`
-~~~
-public interface Estacao {
-	public String getOcupada();
-	public void setOcupada(String ocup);
-	public Estacao[] getvizinhanca();
-	public void addvizinho(Estacao vizinho);
-}
-~~~
-# Componente `EstOnibus`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estonibus.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaoonibus.png)
-
-Campo | Valor
------ | -----
-Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Representa cada uma das estações de ônibus, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
-Interface | `Estacao`
-~~~
-public interface Estacao {
-	public String getOcupada();
-	public void setOcupada(String ocup);
-	public Estacao[] getvizinhanca();
-	public void addvizinho(Estacao vizinho);
-}
-~~~
-# Componente `EstTaxi`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/esttaxi.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/estacaotaxi.png)
-
-Campo | Valor
------ | -----
-Classe |`MC322/src/Projeto_Jogo_Interpol/EstMetro.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Representa cada uma das estações de táxi, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.`
-Interface | `Estacao`
-~~~
-public interface Estacao {
-	public String getOcupada();
-	public void setOcupada(String ocup);
-	public Estacao[] getvizinhanca();
-	public void addvizinho(Estacao vizinho);
-}
-~~~
-# Componente `MisterX`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/misterx.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/imisterx.png)
-
-Campo | Valor
------ | -----
-Classe | `MC322/src/Projeto_Jogo_Interpol/MisterX.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Representar a peça do MisterX, assim como sortear para qual estação ele se moverá`
-Interface | `IMisterX`
-~~~
-public interface IMisterX {
-	public int getpos();
-	public void setpos(int posicao);
-	public void random();
-}
-~~~
-# Componente `Policia`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/policia.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/ipolicia.png)
-
-Campo | Valor
------ | -----
-Classe | `MC322/src/Projeto_Jogo_Interpol/Policia.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Representar as peças controladas pelo jogador e verificar se estas podem se mover para a estação selecionada pelo jogador`
-Interface | `IPolicia`
-~~~
-public interface IPolicia {
-	public int getpos();
-	public void setpos(int posicao);
-	public void movement(int estacao);
-}
-~~~
-# Componente `Tabuleiro`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/tabuleiro.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/itabuleiro.png)
-
-Campo | Valor
------ | -----
-Classe | `MC322/src/Projeto_Jogo_Interpol/Tabuleiro.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Armazenar uma lista contendo todas as estações, assim como mover as peças de uma estação para a outra e verificar quando o MisterX deve se revelar e quando o jogo acaba`
-Interface | `ITabuleiro`
-~~~
-public interface ITabuleiro {
-	public void criatabuleiro();
-	public void moverpolicia(int origem, int destino);
-	public void movermisterx(int origem, int destino);
-	public int buscaposicao(Estacao casa);
-}
-~~~
-# Componente `Rodadas`
-
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/rodadas.png)
-
-## Interfaces
-
-Interfaces associadas a esse componente:
-
-![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Projeto_Jogo_Interpol/Images/irodadas.png)
-
-Campo | Valor
------ | -----
-Classe | `MC322/src/Projeto_Jogo_Interpol/Rodadas.java`
-Autores | `Caio Ruiz Coldebella`
-Objetivo | `Armazenar a informação de qual rodada o jogo se encontra, assim como incrementar tal dado e também verificar se o MisterX deve se mover naquela rodada`
-Interface | `IRodadas`
-~~~
-public interface IRodadas {
-	public int getrodada();
-	public void incrodada();
-	public boolean revealposition();
 }
 ~~~
 ## Detalhamento das Interfaces
