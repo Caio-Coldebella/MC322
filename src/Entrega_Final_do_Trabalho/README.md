@@ -295,7 +295,7 @@ public interface IPolicia {
 
 Armazenar uma lista contendo todas as estações, assim como mover as peças de uma estação para a outra e verificar quando o MisterX deve se revelar e quando o jogo acaba
 
-![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/tabuleiro.png)
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/Tabuleiro.png)
 
 **Ficha Técnica**
 item | detalhamento
