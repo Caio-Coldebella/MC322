@@ -144,29 +144,90 @@ public interface Estacao {
 	public void addvizinho(Estacao vizinho);
 }
 ~~~
-## Componente `<Nome do Componente>`
+## Componente `EstOnibus`
 
-> <Resumo do papel do componente e serviços que ele oferece.>
+Representa cada uma das estações de ônibus, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.
 
-![Componente](diagrama-componente.png)
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/estonibus.png)
 
 **Ficha Técnica**
 item | detalhamento
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
-Autores | `<nome dos membros que criaram o componente>`
-Interfaces | `<listagem das interfaces do componente>`
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.EstOnibus`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `Estacao`
 
 ### Interfaces
 
 Interfaces associadas a esse componente:
 
-![Diagrama Interfaces](diagrama-interfaces.png)
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/estacaoonibus.png)
 
 Interface agregadora do componente em Java:
 
 ~~~java
-public interface IDataSet extends ITableProducer, IDataSetProperties {
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
+}
+~~~
+## Componente `EstTaxi`
+
+Representa cada uma das estações de táxi, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/esttaxi.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.EstTaxi`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `Estacao`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/estacaotaxi.png)
+
+Interface agregadora do componente em Java:
+
+~~~java
+public interface Estacao {
+	public String getOcupada();
+	public void setOcupada(String ocup);
+	public Estacao[] getvizinhanca();
+	public void addvizinho(Estacao vizinho);
+}
+~~~
+## Componente `MisterX`
+
+Representar a peça do MisterX, assim como sortear para qual estação ele se moverá
+
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/misterx.png)
+
+**Ficha Técnica**
+item | detalhamento
+----- | -----
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.MisterX`
+Autores | `Caio Ruiz Coldebella`
+Interfaces | `IMisterX`
+
+### Interfaces
+
+Interfaces associadas a esse componente:
+
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/imisterx.png)
+
+Interface agregadora do componente em Java:
+
+~~~java
+public interface IMisterX {
+	public int getpos();
+	public void setpos(int posicao);
+	public void random();
 }
 ~~~
 ## Detalhamento das Interfaces
