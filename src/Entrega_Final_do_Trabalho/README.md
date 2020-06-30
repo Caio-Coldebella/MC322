@@ -436,7 +436,7 @@ Método | Objetivo
 
 ## Diagrama da hierarquia de exceções
 
-![Diagrama Excecoes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/diagramaexcecoes.png)
+![Diagrama Excecoes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/diagramaexcecoes.png)
 
 ## Descrição das classes de exceção
 
