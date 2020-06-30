@@ -435,17 +435,13 @@ Método | Objetivo
 # Plano de Exceções
 
 ## Diagrama da hierarquia de exceções
-`<Elabore um diagrama com a hierarquia de exceções como detalhado abaixo>`
 
-![Hierarquia Exceções](exception-hierarchy.png)
+![Diagrama Excecoes](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/diagramaexcecoes.png)
 
 ## Descrição das classes de exceção
 
-`<Monte uma tabela descritiva seguindo o exemplo>:`
-
 Classe | Descrição
 ----- | -----
-DivisaoInvalida | Engloba todas as exceções de divisões não aceitas.
-DivisaoInutil | Indica que a divisão por 1 é inútil.
-DivisaoNaoInteira | Indica uma divisão não inteira.
+Exception         | Engloba todas as exceções
+movimentoinvalido | Engloba todos os casos em que uma peça tenta se mover para uma casa que nao é vizinha ou para a casa que ocupa atualmente
 
