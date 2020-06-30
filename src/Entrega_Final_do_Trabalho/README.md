@@ -83,21 +83,49 @@ public void algoInteressante(…) {
 ~~~
 
 # Destaques de Pattern
-`<Destaque de patterns adotados pela equipe. Sugestão de estrutura:>`
 
 ## Diagrama do Pattern
-`<Diagrama do pattern dentro do contexto da aplicação.>`
+
+![Diagrama Pattern](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/diagramapattern.png)
 
 ## Código do Pattern
 ~~~java
-// Recorte do código do pattern seguindo as mesmas diretrizes de outros destaques
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
+public class thread {
+	boolean esperando;
+	public thread() {}
+	synchronized void tique() {
+	esperando=true; // agora o objeto thread esta esperando um evento de algum botao
+	notify();
+	try {
+		while(esperando) {// esperando algum evento de um botao
+			wait();}
+	}catch (InterruptedException e) {
+		e.printStackTrace();}
+	}
+	synchronized void taque() {// ocorreu o evento em algum botao
+	esperando=false;
+	notify();// agora a thread prossegue o codigo na main
+	}}
+public class mainwindow {
+	...
+	public static void main(String[] args) {
+	...
+	tt.tique();
+	verde.movement(str, t);
+}
+public class windowbotao extends JFrame{
+...
+	public void visual() {
+	...
+	JButton botao9=new JButton("9");
+	...
+	botao9.addActionListener(new ActionListener() {public void actionPerformed(ActionEvent e) {
+		Interpol.mainwindow.str=9;
+		Interpol.mainwindow.tt.taque();}});
 }
 ~~~
 
-> <Explicação de como o pattern foi adotado e quais suas vantagens, referenciando o diagrama.>
+A main opera sequencialmente, porem quando ela precisa da informação do novo valor de str (casa para aonde a peça se moverá) ela chama a função tique da classe thread, que coloca a main em estado de espera. Quando o botão é pressionado, é gerado um evento, o valor de str é setado de acordo com o botão que é apertado, e a main volta a operar normalmente.
 
 # Documentação dos Componentes
 
