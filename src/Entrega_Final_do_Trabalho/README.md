@@ -119,12 +119,12 @@ Imagem envia para windowbotao, e windowbotao envia informações para thread
 
 Representa cada uma das estações de metrô, e definirá se as peças ocupam estas estações, assim como armazenará informaçoes sobre suas estações vizinhas.
 
-![Componente](diagrama-componente.png)
+![Componente](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/estmetro.png)
 
 **Ficha Técnica**
 item | detalhamento
 ----- | -----
-Classe | `<caminho completo da classe com pacotes>` <br> Exemplo: `pt.c08componentes.s20catalog.s10ds.DataSetComponent`
+Classe | `MC322.src.Entrega_Final_do_Trabalho.src.Interpol.EstMetro`
 Autores | `Caio Ruiz Coldebella`
 Interfaces | `Estacao`
 
@@ -132,10 +132,11 @@ Interfaces | `Estacao`
 
 Interfaces associadas a esse componente:
 
-![Diagrama Interfaces](diagrama-interfaces.png)
+![Diagrama Interfaces](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/estacaometro.png)
 
 Interface agregadora do componente em Java:
 
+~~~java
 public interface Estacao {
 	public String getOcupada();
 	public void setOcupada(String ocup);
