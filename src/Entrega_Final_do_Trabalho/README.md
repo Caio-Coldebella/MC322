@@ -22,19 +22,6 @@
 ![Ônibus](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/onibus.png)
 ![Metrô](https://github.com/Caio-Coldebella/MC322/blob/master/src/Entrega_Final_do_Trabalho/assets/metro.png)
 
-# Modelo para Apresentação do Projeto
-
-Este é um guia de como produzir documentação em Markdown. Para entender como criar documentos em Markdown no Github, veja o material/vídeo:
-[Guia de Uso do Markdown](https://github.com/mc-unicamp/oficinas/tree/master/docs).
-
-Vide detalhes sobre o Markdown em: [Mastering Markdown](https://guides.github.com/features/mastering-markdown/).
-
-E mais especificamente sobre tabelas em: [Organizing information with tables](https://help.github.com/en/articles/organizing-information-with-tables)
-
-Segue abaixo o modelo de como deve ser documentado o projeto e cada componente do projeto. Tudo o que for indicado entre `<...>` indica algo que deve ser substituído pelo indicado. No modelo são colocados exemplos ilustrativos, que serão substituídos pelos do seu projeto.
-
-Para a construção dos diagramas, devem ser usados modelos disponíveis em: [Diagramas de Classes, Interfaces e Componentes](https://docs.google.com/presentation/d/1ML3WrnDtzh-4wqLmdXN9au1TBIwEqo7TIbMLNOYSMAI/edit?usp=sharing)
-
 # Projeto `Interpol`
 
 # Descrição Resumida do Projeto/Jogo
