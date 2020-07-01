@@ -24,7 +24,7 @@
 
 # Projeto `Interpol`
 
-# Descrição Resumida do Projeto/Jogo
+# Descrição Resumida do Jogo
 * O projeto é uma versão simplificada do jogo Interpol, o tabuleiro é composto de 50 estações, sendo estas de Metrô, Ônibus ou Táxi. O jogador controla 4 peças que representam os detetives, já o computador controla o MisterX, cada peça começa em uma estação diferente no tabuleiro. O objetivo do jogo é estar na mesma casa do MisterX em até 12 rodadas, caso contrário o MisterX vencerá. O MisterX move-se escondido pelo tabuleiro, sendo que toda rodada é revelado o meio de transporte que ele utilizou para se locomover, e sendo revelada a sua posição apenas nas rodadas 2, 6 e 10, e na última caso MisterX vença.
   * Todas as peças se movem da seguinte forma:
     * Caso estejam em uma estação de metrô:
