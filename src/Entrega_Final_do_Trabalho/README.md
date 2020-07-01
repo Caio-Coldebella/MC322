@@ -59,7 +59,7 @@
 
 # Destaques de Código
 
-* CÓDIGO DO MOVIMENTO DO MISTER X
+* Código do movimento do Mister X
 ~~~java
 public class MisterX implements IMisterX{
 	private int pos;
@@ -102,7 +102,7 @@ public class MisterX implements IMisterX{
 		...
 		}}
 ~~~
-* CÓDIGO DE DETERMINAÇÃO DO MEIO DE TRANSPORTE DE MISTER X
+* Código de determinação do meio de transporte de Mister X
 ~~~java
 public class Tabuleiro implements ITabuleiro{
 ...
@@ -125,7 +125,7 @@ public void movermisterx(int origem,int destino, IMisterX mx) { //move misterx e
 				mx.settransp("metro");}}}}
 ~~~
 
-* CÓDIGO DE ADIÇÃO DE IMAGEM NA JANELA DO JOGO
+* Código de adição de imagem na janela do jogo
 ~~~java
 public class Imagem extends JLabel{
 	private static final long serialVersionUID = 1L;
@@ -143,7 +143,7 @@ public void adicionaImagem(JLabel img) { //funcao para adicionar a imagem de fun
 		SwingUtilities.updateComponentTreeUI(this);}
 ~~~
 
-* CÓDIGO DE ALTERAÇÃO DA COR DOS BOTÕES
+* Código de alteração da cor dos botões
 ~~~java
 public class windowbotao extends JFrame{
 	***
