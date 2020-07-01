@@ -53,9 +53,36 @@
 ## Slides da Apresentação Final
 * [Slides Apresentação Final](https://docs.google.com/presentation/d/12gT9gZTss7E-y8oYp15K24NXYm8-5Ades8nL5rl_mfQ/edit?usp=sharing)
 
-## Relatório de Evolução
+# Relatório de Evolução
 
 > <Relatório de evolução, descrevendo as evoluções do design do projeto, dificuldades enfrentadas, mudanças de rumo, melhorias e lições aprendidas. Referências aos diagramas e recortes de mudanças são bem-vindos.>
+
+### Dificuldades enfrentadas
+* Interromper a execução da main até um botão gerar um evento
+	O principal problema enfrentado ao implementar o código foi a dificuldade em fazer o código da main interromper a sua execução temporariamente até um dos 50 botões das estações gerar um evento, pois a main necessita da variavel str (int) que representa a casa para a qual a peça irá se movimentar, a qual é setada ao usuário pressionar um botão.
+	A solução encontrada foi a utilização de thread, assim foi criada uma classe de nome "thread", a qual possui duas funções. A primeira função, "tique", é chamada pela main logo antes de esta necessitar da variável str para realizar o movimento dos Policiais, essa função possui o método "wait", o que faz com que a main entre em estado de espera.
+	A segunda função possui nome "taque", e é chamada por qualquer botão que é pressionado logo após este setar a variavel str, essa função, através do "notify", notifica que a função main de que esta deve retomar o código de onde ela parou, segue abaixo o código da classe "thread"
+
+~~~java	
+public class thread {
+	boolean esperando;
+	public thread() {}
+	synchronized void tique() {
+	esperando=true; // agora o objeto thread esta esperando um evento de algum botao
+	notify();
+	try {while(esperando) {// esperando algum evento de um botao
+			wait();}
+	}catch (InterruptedException e) {
+		e.printStackTrace();}}
+	synchronized void taque() {// ocorreu o evento em algum botao
+	esperando=false;
+	notify();// agora a thread prossegue o codigo na main}}	
+~~~	
+### Melhorias
+ * Aperfeiçoamento do codigo de movimento do Mister X
+	Inicialmente o código para o movimento do Mister X era muito simplificado
+
+
 
 # Destaques de Código
 
