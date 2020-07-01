@@ -76,13 +76,20 @@ public class thread {
 		e.printStackTrace();}}
 	synchronized void taque() {// ocorreu o evento em algum botao
 	esperando=false;
-	notify();// agora a thread prossegue o codigo na main}}	
-~~~	
+	notify();// agora a thread prossegue o codigo na main}}		
+~~~
 ### Melhorias
  * Aperfeiçoamento do codigo de movimento do Mister X
-	Inicialmente o código para o movimento do Mister X era muito simplificado
-
-
+	Inicialmente o código para o movimento do Mister X era muito simplificado, o código utilizava a lista com toda a vizinhança da estação onde o Mister X se encontrava, e sorteava (utilizando a função Random) um número entre zero e o tamanho dessa lista, a estação de destino seria a estação cujo índice na lista era igual ao número sorteado, porém se a estação estivesse ocupada era realizado um novo sorteio até ser sorteada uma estação vazia.
+	Entretanto ocorriam alguns problemas com esta função, primeiramente ela não previa o caso onde Mister X estava cercado por todos os lados pelas peças adversárias, ou seja, sem nehuma estação vizinha vazia, nesse caso era sorteada uma estação infinitamente. Além disso, por diversas vezes o Mister X acabava se colocando em posições extremamente arriscadas, como se mover para uma casa com uma ou mais estações vizinhas ocupadas por uma peça inimiga, nestes casos ele era facilmente pego, e era muito fácil do usuário/jogador vencer o jogo.
+	Dessa forma ,a lógica da nova função de movimento foi implementada de forma a resolver estes problemas. A partir da lista contendo todos os vizinhos da estação onde se encontrava Mister X foi criada uma nova lista, chamada "vizinhosvazios", contendo apenas as estações vizinhas da estação de origem que não estavam ocupadas, então há 3 casos:
+	** Se a lista "vizinhosvazios" não possuír nenhuma estação, então Mister X está cercado, neste caso o jogador vence o jogo
+	** Se a lista "vizinhosvazios" possui apenas uma estação, então Mister X se moverá para esta
+	** Se a lista "vizinhosvazios" possui 2 ou mais estações, todas as estações contidas nessa lista terão a sua vizinhança verificada, e as estações que estiverem com todos os seus vizinhos vazios, serão adicionadas na lista vizinhoscomvizinhosvazios, então teremos mais 3 casos:
+		*** Se a lista "vizinhoscomvizinhosvazios" estiver vazia, será sorteada através da função nextInt() da biblioteca java.util.Random uma estação a partir da lista "vizinhosvazios", e o Mister X se moverá para lá
+		*** Se a lista "vizinhoscomvizinhosvazios" possuir apenas uma estação, Mister X se moverá para lá	
+		*** Se a lista "vizinhoscomvizinhosvazios" possuir 2 ou mais estações, uma destas será sorteada e Mister X se moverá para lá	
+	O código da função de movimento do Mister X se encontra na sessão Destaques de Código deste documento
 
 # Destaques de Código
 
