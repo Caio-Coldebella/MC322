@@ -59,16 +59,102 @@
 
 # Destaques de Código
 
-> <Escolha trechos relevantes e/ou de destaque do seu código. Apresente um recorte (você pode usar reticências para remover partes menos importantes). Veja como foi usado o highlight de Java para o código.>
-
+* CÓDIGO DO MOVIMENTO DO MISTER X
 ~~~java
-// Recorte do seu código
-public void algoInteressante(…) {
-   …
-   trechoInteressante = 100;
-}
+public class MisterX implements IMisterX{
+	private int pos;
+	private Estacao[] vizinhosvazios;
+	private Estacao[] vizinhoscomvizinhosvazios;
+	private String transporte;
+	...
+	public void random(ITabuleiro t,IPolicia p) {
+		int a=getpos();// a=posicao do mister x
+		Estacao[] vizinhos=Interpol.Tabuleiro.tab[a].getvizinhanca();//coloca os vizinhos em uma lista
+		int len=vizinhos.length;
+		vizinhosvazios=null; //cria uma lista com vizinhos vazios
+		vizinhosvazios=new Estacao[1];// define a lista como tamanho 1
+		for(int j=0;j<len;j++) {
+			if(vizinhos[j].getOcupada()=="nao") {// se o vizinho esta vazio adiciona na lista dos vizinhos vazios
+				addvizinhovazio(vizinhos[j]);}}// chama a funcao que adiciona um vizinho a lista vizinhos vazios
+		len=vizinhosvazios.length;// atualiza len para o tamanho dos vizinhos vazios
+		if(len==1 && vizinhosvazios[0]==null) {// se nenhum vizinho estiver vazio, significa que a peca nao tem para onde ir e vai ser capturada
+			p.setcaptura();
+			return;}
+		if(len==1) {// se tiver apenas um vizinho vazio a peca se move para esse vizinho
+			...
+		// se tiver mais de um vizinho vazio, verifica quais desses vizinhos tem toda a sua vizinha vazia (exceto pelo misterx)
+		vizinhoscomvizinhosvazios=null;
+		vizinhoscomvizinhosvazios=new Estacao[1];
+		for(int j=0;j<len;j++) {
+			if(vizinhancaocupada(vizinhosvazios[j])==false) { // chama a funcao para verificar se esta estacao possui vizinhanca totalmente vazia
+				addvizinhoscomvizinhosvazios(vizinhosvazios[j]);}} // se possuir adiciona a estacao na lista vizinhoscomvizinhosvazios
+		len=vizinhoscomvizinhosvazios.length; // atualiza len
+		if(len==1 && vizinhoscomvizinhosvazios[0]==null) {// se nenhum vizinho possuir vizinhanca vazia eh sorteado uma estacao da lista vizinhosvazios
+			len=vizinhosvazios.length; // atualiza len
+			int randint;
+			Random r=new Random();
+			...
+		if(len==1) { // se so ha um vizinho com vizinhanca vazia a peca se move para la
+			...
+		// se ha mais de um vizinho com vizinhanca vazia, eh realizado um sorteio entre as estacoes da lista vizinhoscomvizinhosvazios
+		int randint;
+		Random r=new Random();
+		...
+		}}
+~~~
+* CÓDIGO DE DETERMINAÇÃO DO MEIO DE TRANSPORTE DE MISTER X
+~~~java
+public class Tabuleiro implements ITabuleiro{
+...
+public void movermisterx(int origem,int destino, IMisterX mx) { //move misterx e verifica o meio de transporte
+	if (tab[destino].getOcupada()=="nao") {
+		...
+		if(tab[origem].getClass()==EstTaxi.class) {
+			mx.settransp("taxi");}
+		else if(tab[origem].getClass()==EstOnibus.class) {
+			if(tab[destino].getClass()==EstTaxi.class) {
+				mx.settransp("taxi");}
+			else {
+				mx.settransp("onibus");}}
+		else {
+			if(tab[destino].getClass()==EstTaxi.class) {
+				mx.settransp("taxi");}
+			else if(tab[destino].getClass()==EstOnibus.class) {
+					mx.settransp("onibus");}
+			else {
+				mx.settransp("metro");}}}}
 ~~~
 
+* CÓDIGO DE ADIÇÃO DE IMAGEM NA JANELA DO JOGO
+~~~java
+public class Imagem extends JLabel{
+	private static final long serialVersionUID = 1L;
+	public JLabel imagem(String arquivoImagem) {
+		ImageIcon a=new ImageIcon(getClass().getResource(arquivoImagem));
+		JLabel imagem=new JLabel(a);
+		return imagem;}}
+-------------------------------------------------------------------------------------------
+public class windowbotao extends JFrame{
+...
+public void adicionaImagem(JLabel img) { //funcao para adicionar a imagem de fundo do mapa
+		img.setSize(1058,662);
+		img.setLocation(130,0);
+		mapa.add(img);
+		SwingUtilities.updateComponentTreeUI(this);}
+~~~
+
+* CÓDIGO DE ALTERAÇÃO DA COR DOS BOTÕES
+~~~java
+public class windowbotao extends JFrame{
+	***
+	public static void alteracor(int nbotao, String cor) { // funcao usada para alterar a cor do botao requisitado, toda vez que alguma peca se move
+		if(cor=="branco") {listabotoes[nbotao].setBackground(Color.white);}
+		else if(cor=="vermelho") {listabotoes[nbotao].setBackground(Color.red);}
+		else if(cor=="verde") {listabotoes[nbotao].setBackground(Color.green);}
+		else if(cor=="amarelo") {listabotoes[nbotao].setBackground(Color.yellow);}
+		else if(cor=="azul") {listabotoes[nbotao].setBackground(Color.cyan);}
+		else {listabotoes[nbotao].setBackground(Color.magenta);}}
+~~~
 # Destaques de Pattern
 
 ## Diagrama do Pattern
